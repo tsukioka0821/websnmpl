@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ナビゲーションの例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #555;
+            display: flex; /* フレックスボックスを有効化 */
+            justify-content: space-between; /* 左右に分割 */
+            align-items: center; /* 垂直方向を中央揃え */
+            padding: 1rem;
+        }
+        nav .left-links, nav .right-links {
+            display: flex; /* 各グループ内も横並び */
+            gap: 10px; /* リンク間の間隔 */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- 左側リンク -->
+        <div class="left-links">
+            <a href="#about">profile</a>
+            <a href="#services">doing</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- 右側リンク -->
+        <div class="right-links">
+            <a href="index.html">ホーム</a>
+            <a href="about.html">概要</a>
+            <a href="contact.html">お問い合わせ</a>
+        </div>
+    </nav>
+</body>
+</html>
 
