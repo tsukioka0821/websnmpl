@@ -2,6 +2,15 @@
 <html lang="ja">
 <head>
     <link rel="stylesheet" href="styles.css">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像の追加例</title>
+    <style>
+        img {
+            max-width: 100%; /* 画像が画面幅を超えないように調整 */
+            height: auto; /* 縦横比を保持 */
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>月岡京太郎</title>
@@ -57,6 +66,22 @@
             月岡京太郎
         </p>
     </section>
+     <h1>画像を追加する例</h1>
+    
+    <!-- 基本的な画像 -->
+    <img src="example.jpg" alt="基本的な画像">
+
+    <!-- サイズを指定 -->
+    <img src="example.jpg" alt="サイズ指定" width="300" height="200">
+
+    <!-- 外部の画像 -->
+    <img src="https://via.placeholder.com/150" alt="外部画像">
+
+    <!-- キャプション付きの画像 -->
+    <figure>
+        <img src="example.jpg" alt="キャプション付き画像">
+        <figcaption>これはキャプション付きの画像です。</figcaption>
+    </figure>
     <section id="services">
         <h2>doing</h2>
         <p>私はBlenderを使いモデリングすることが好きです。<br>
