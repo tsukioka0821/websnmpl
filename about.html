@@ -4,22 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLBファイル表示</title>
+    
+    <!-- model-viewerライブラリを読み込み -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
     <style>
+        /* 全体のスタイル */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #180614; /* 文字の色 */
+            background-color: #dddcd6; /* 背景色 */
+        }
+
+        /* ヘッダーのスタイル */
+        header {
+            background: #333;
+            color: #ffffff; /* ヘッダーの文字を白に変更 */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* ナビゲーションのスタイル */
+        nav {
+            background: #555;
+            padding: 1rem;
+            text-align: center; /* リンクを中央揃え */
+        }
+
+        nav a {
+            color: #ff6347; /* ナビゲーションリンクの文字をトマト色に変更 */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ffa500; /* ホバー時にオレンジ色に変更 */
+        }
+
+        /* セクションのスタイル */
+        section {
+            padding: 2rem;
+        }
+
+        /* フッターのスタイル */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* model-viewerのスタイル */
         model-viewer {
             width: 100%;
             height: 500px;
             background-color: #eee; /* 背景色を設定 */
         }
+
+        /* 画像のスタイル */
+        img {
+            max-width: 100%; /* 画像が画面幅を超えないように調整 */
+            height: auto; /* 縦横比を保持 */
+        }
     </style>
 </head>
 <body>
-    <model-viewer src="gld/asset.glb" 
-                  alt="3Dモデルの説明" 
-                  auto-rotate 
-                  camera-controls 
-                  ar>
+    <!-- ヘッダー -->
+    <header>
+        <h1>私のウェブサイトへようこそ！</h1>
+    </header>
+
+    <!-- ナビゲーション -->
+    <nav>
+        <a href="#about">profile</a>
+        <a href="#services">doing</a>
+        <a href="#contact">Contact</a>
+        <a href="index.html">ホーム</a>
+        <a href="about.html">概要</a>
+        <a href="contact.html">お問い合わせ</a>
+    </nav>
+
+    <!-- プロフィールセクション -->
+    <section id="about">
+        <h2>profile</h2>
+        <p>
+            多摩美術大学<br>
+            情報デザイン学科メディアデザインコース<br>
+            月岡京太郎
+        </p>
+    </section>
+
+    <!-- GLBファイルの表示 -->
+    <model-viewer src="gld/asset.glb" alt="3Dモデルの説明" auto-rotate camera-controls ar>
     </model-viewer>
+
+    <!-- サービスセクション -->
+    <section id="services">
+        <h2>doing</h2>
+        <p>
+            私はBlenderを使いモデリングすることが好きです。<br>
+            2年生ではゲームキャラクターのモデリングやAR技術を使い現実世界にモデルを表示させる試みを行いました。<br>
+            3年生では学んだことを使いVFXやフィギュア制作などを行なっていきたいです。
+        </p>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>ご連絡は以下のメールアドレスまでお願いします。</p>
+        <p>Email: 12346044@stdt.tamabi.ac.jp</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 月岡京太郎</p>
+    </footer>
+
+    <!-- スクリプト -->
+    <script>
+        // ナビゲーションリンクにクリックイベントを追加
+        document.querySelectorAll('nav a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                alert('リンクがクリックされました！');
+            });
+        });
+    </script>
 </body>
 </html>
 
