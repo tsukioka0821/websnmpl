@@ -29,6 +29,16 @@
             text-decoration: underline;
         }
     </style>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像を縦並びにする</title>
+    <style>
+        /* 画像を縦並びにするためのスタイル */
+        img {
+            display: block; /* ブロック要素として扱う */
+            margin: 10px auto; /* 自動で中央揃え */
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -46,6 +56,12 @@
             <a href="contact.html">お問い合わせ</a>
         </div>
     </nav>
+
+    <img src="image/example1.jpg" alt="サイズ指定" width="500" height="500">
+    <img src="image/example2.jpg" alt="サイズ指定" width="700" height="500">
+    <img src="image/example3.jpg" alt="サイズ指定" width="500" height="700">
+    <img src="image/example4.jpg" alt="サイズ指定" width="500" height="700">
+
 </body>
 </html>
 
