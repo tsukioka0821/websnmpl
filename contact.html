@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLBファイル表示</title>
+    
+    <!-- model-viewerライブラリを読み込み -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
+    <style>
+        /* 全体のスタイル */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #180614; /* 文字の色 */
+            background-color: #dddcd6; /* 背景色 */
+        }
+
+        /* ヘッダーのスタイル */
+        header {
+            background: #333;
+            color: #ffffff; /* ヘッダーの文字を白に変更 */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* ナビゲーションのスタイル */
+        nav {
+            background: #555;
+            padding: 1rem;
+            text-align: center; /* リンクを中央揃え */
+        }
+
+        nav a {
+            color: #ff6347; /* ナビゲーションリンクの文字をトマト色に変更 */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ffa500; /* ホバー時にオレンジ色に変更 */
+        }
+
+        /* セクションのスタイル */
+        section {
+            padding: 2rem;
+        }
+
+        /* model-viewerのスタイルを正方形に設定 */
+        model-viewer {
+            width: 400px; /* 正方形の幅 */
+            height: 400px; /* 正方形の高さ */
+            background-color: #eee; /* 背景色を設定 */
+            margin: 0 auto; /* 中央揃え */
+            display: block; /* ブロック要素化 */
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1>月岡の作品集へようこそ！</h1>
+    </header>
+
+    <!-- ナビゲーション -->
+    <nav>
+        <a href="#about">3d model</a>
+        <a href="#services">illustration</a>
+      
+        <a href="index.html">ホーム</a>
+        <a href="about.html">作品</a>
+        <a href="contact.html">動画</a>
+    </nav>
+
+    <!-- プロフィールセクション -->
+    <section id="about">
+        <h2>3d model</h2>
+        <p>
+            webで表示するためにモデル1,2は解像度を落としてあります
+        </p>
+    </section>
+
+    
+
+    <!-- サービスセクション -->
+    <section id="services">
+        <h2>illustration</h2>
+        <p>
+           
+        </p>
+    </section>
+   
+</html>
